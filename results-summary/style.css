@@ -38,6 +38,8 @@ body {
   background: var(--white);
   box-shadow: 0 30px 60px rgba(61, 108, 236, 0.15);
   border-radius: 3.2rem;
+  
+  max-width: 73rem;
 }
 
 .card .result {
