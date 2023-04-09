@@ -1,0 +1,198 @@
+:root {
+  --white: #FFFFFF;
+  --aquamarine-green: #2AB3B1;
+  --aquamarine-green-light: #4ABFBC;
+  --lime-green: #C0DF33;
+  --lime-green-light: #c9ea33;
+  --grey: #9AA7BE;
+  --sky-blue: #E6EFF5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  
+  padding: 2rem;
+  
+  background-color: var(--sky-blue);
+  
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  color: var(--white);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 63.5rem;
+  
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card .join-community {
+  padding: 2.8rem;
+}
+
+.card .join-community > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--aquamarine-green);
+}
+
+.card .join-community > h2 {
+  margin-top: 1.5rem;
+  
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--lime-green);
+  line-height: 2rem;
+}
+
+.card .join-community > p {
+  margin-top: 1.6rem;
+  
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--grey);
+  line-height: 2.6rem;
+}
+
+.card .learning-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .learning-container .subscription {
+  padding: 2.4rem;
+  
+  background-color: var(--aquamarine-green);
+}
+
+.card .learning-container .subscription > h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+
+.card .learning-container .subscription .price {
+  margin-top: 1.8rem;
+  
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card .learning-container .subscription .price > h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.card .learning-container .subscription .price > span {
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.card .learning-container .subscription > p {
+  margin-top: 0.4rem;
+  
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.card .learning-container .subscription > button {
+  width: 100%;
+  
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--lime-green);
+  cursor: pointer;
+  
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--white);
+  
+  margin-top: 2.6rem;
+  padding: 1.4rem;
+}
+
+.card .learning-container .subscription > button:hover {
+  background-color: var(--lime-green-light);
+}
+
+.card .learning-container .our-learning-hub {
+  padding: 2.4rem;
+  
+  background-color: var(--aquamarine-green-light);
+}
+
+.card .learning-container .our-learning-hub > h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.card .learning-container .our-learning-hub > ul {
+  margin-top: 1.8rem;
+  
+  list-style: none;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card .learning-container .our-learning-hub > ul > li {
+  font-size: 1.4rem;
+  opacity: 0.75;
+}
+
+@media (min-width: 768px) {
+  .card {
+    border-radius: 0.8rem;
+  }
+  
+  .card .join-community {
+    padding: 4rem;
+  }
+
+  .card .join-community > h1 {
+    font-size: 2.4rem;
+  }
+  
+  .card .join-community > h2 {
+    font-size: 1.8rem;
+  }
+
+  .card .join-community > p {
+    font-size: 1.6rem;
+  }
+  
+  .card .learning-container {
+    flex-direction: row;
+  }
+  
+  .card .learning-container .subscription {
+    flex: 1;
+    
+    padding: 4rem;
+  }
+  
+  .card .learning-container .our-learning-hub {
+    flex: 1;
+    
+    padding: 4rem;
+  }
+}
