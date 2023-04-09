@@ -12,6 +12,6 @@ This repository contains some challenges from [Frontend Mentor](https://www.fron
 | Advanced     | :star: :star: :star: :star: :star:        |
 | Guru         | :star: :star: :star: :star: :star: :star: |
 
-| Name                                                                         | Difficulty | Technologies / Approaches |
-|------------------------------------------------------------------------------|------------|---------------------------|
-| [QR Code Component](https://danyelvarejao.github.io/frontend-mentor/qr-code) | :star:     | HTML, CSS                 |
+| Name                                                                         | Difficulty | Technologies / Approaches | Link                                                                 |
+|------------------------------------------------------------------------------|------------|---------------------------|----------------------------------------------------------------------|
+| [QR Code Component](https://danyelvarejao.github.io/frontend-mentor/qr-code) | :star:     | HTML, CSS                 | https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H |
