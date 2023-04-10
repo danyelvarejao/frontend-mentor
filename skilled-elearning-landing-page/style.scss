@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+$heading-xl: 56px;
+$heading-l: 40px;
+$heading-m: 32px;
+$heading-m-line-height: 40px;
+$heading-s: 24px;
+$body-m: 18px;
+$body-m-line-height: 28px;
+$body-s: 16px;
+$body-s-line-height: 28px;
+
+$lavender-blue: #666CA3;
+$dark-midnight-blue: #13183F;
+$steel-grey: #83869A;
+$magenta-pink: #F74780;
+$peachy-pink :#FFA7C3;
+$white: #FFFFFF;
+
+$gradient-1: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+$gradient-1-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+$gradient-2: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+$gradient-2-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+
+$body-background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+
+$tablet: 768px;
+$desktop: 1440px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 320px;
+
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+
+  background: $body-background;
+}
+
+header {
+  max-width: 110rem;
+  width: 100%;
+  
+  margin: 0 auto;
+  padding: 1.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-default {
+  display: inline-block;
+  padding: 1.4rem 3.2rem;
+  
+  background-color: $dark-midnight-blue;
+  border-radius: 2.8rem;
+  
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.button-default:hover {
+  background-color: $lavender-blue;
+}
+
+.button-pink {
+  display: inline-block;
+  padding: 1.4rem 3.2rem;
+  
+  background: $gradient-1;
+  border-radius: 2.8rem;
+  
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.button-pink:hover {
+  background: $gradient-1-hover;
+}
+
+.button-purple {
+  display: inline-block;
+  padding: 1.4rem 3.2rem;
+  
+  background: $gradient-2;
+  border-radius: 2.8rem;
+  
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.button-purple:hover {
+  background: $gradient-2-hover;
+}
+
+.hero {
+  max-width: 110rem;
+  width: 100%;
+  
+  margin: 0 auto;
+  padding: 1.6rem;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 4.6rem;
+  
+  .skill {
+    h1 {
+      font-size: $heading-l;
+      font-weight: 800;
+      color: $dark-midnight-blue;
+
+      @media (min-width: $desktop) {
+        font-size: $heading-xl;
+      }
+    }
+
+    p {
+      margin-top: 2.6rem;
+
+      color: $steel-grey;
+      font-weight: 500;
+      line-height: 2.6rem;
+    }
+
+    a {
+      margin-top: 2.4rem;
+    }
+  }
+
+  picture {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.courses {
+  max-width: 110rem;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 1.6rem;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4rem;
+
+  .popular-courses {
+    background: $gradient-1;
+    border-radius: 1rem;
+    
+    padding: 2.4rem;
+    
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 3.2rem;
+      color: $white;
+
+      @media (min-width: $desktop) {
+        font-size: $heading-m;
+        line-height: $heading-m-line-height;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      padding: 6.4rem 3.2rem;
+    }
+  }
+  
+  .card {
+    position: relative;
+    background-color: $white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0442381);
+    
+    padding: 3.2rem 2.8rem;
+    
+    img {
+      position: absolute;
+      top: -2.6rem;
+    }
+    
+    h1 {
+      margin-top: 2.4rem;
+      
+      font-size: 2rem;
+      font-weight: 800;
+      color: $dark-midnight-blue;
+    }
+    
+    p {
+      margin-top: 1.6rem;
+      
+      font-weight: 500;
+      line-height: 2.6rem;
+      color: $steel-grey;
+    }
+    
+    a {
+      display: inline-block;
+      margin-top: 2.4rem;
+      
+      text-decoration: none;
+      color: $magenta-pink;
+      font-weight: 700;
+      line-height: 2.8rem;
+    }
+  }
+  
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5.6rem;
+    grid-column-gap: 1.2rem;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+  }
+}
+
+footer {
+  margin-top: 8rem;
+  
+  background-color: $dark-midnight-blue;
+  
+  .container {
+    max-width: 110rem;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 3.6rem 1.6rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
