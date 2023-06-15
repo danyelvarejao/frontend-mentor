@@ -34,7 +34,7 @@ body {
     margin-top: 3rem;
     font-size: 2.8rem; }
   .card > p {
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
     line-height: 2.4rem;
     font-size: 1.5rem;
     color: #969FAD; }
@@ -75,7 +75,8 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 0.2rem; }
     .card > a:hover {
       background-color: #FFFFFF;
       color: #FC7614; }

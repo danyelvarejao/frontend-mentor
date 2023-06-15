@@ -59,7 +59,7 @@ body {
   }
 
   > p {
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
 
     line-height: 2.4rem;
     font-size: 1.5rem;
@@ -125,6 +125,7 @@ body {
     font-size: 1.5rem;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.2rem;
 
     &:hover {
       background-color: $pure-white;
