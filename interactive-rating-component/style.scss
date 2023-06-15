@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap');
+
+$dark-blue: #262E38;
+$light-grey: #969FAD;
+$medium-grey: #7C8798;
+$orange: #FC7614;
+$pure-white: #FFFFFF;
+$very-dark-blue: #131518;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2.4rem;
+
+  min-height: 100vh;
+  background-color: $very-dark-blue;
+
+  display: grid;
+  place-items: center;
+
+  font-family: Overpass, sans-serif;
+  font-size: 1.6rem;
+  color: $pure-white;
+}
+
+.card {
+  max-width: 41.2rem;
+
+  padding: 3.2rem;
+
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+
+  border-radius: 3rem;
+
+  .icon-star {
+    width: 48px;
+    height: 48px;
+
+    background: $dark-blue;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > h1 {
+    margin-top: 3rem;
+
+    font-size: 2.8rem;
+  }
+
+  > p {
+    margin-top: 1.5rem;
+
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+    color: $light-grey;
+  }
+
+  .feedbacks {
+    margin-top: 2.4rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    > input[type="radio"] {
+      display: none;
+
+      &:checked + label {
+        background-color: $orange;
+        color: $pure-white;
+      }
+    }
+
+    > label {
+      width: 51px;
+      height: 51px;
+
+      background-color: $dark-blue;
+      border-radius: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-weight: bold;
+      color: $medium-grey;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: $medium-grey;
+        color: $pure-white;
+      }
+    }
+  }
+
+  > a {
+    margin-top: 3.2rem;
+
+    padding: 1.2rem;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2.4rem;
+    text-decoration: none;
+
+    background-color: $orange;
+
+    color: $pure-white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      background-color: $pure-white;
+      color: $orange;
+    }
+  }
+}
+
