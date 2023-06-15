@@ -1,2 +1,43 @@
-.idea
-.vscode
+# Ignore any editor-specific files or directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.komodotools
+*.tmproj
+*.esproj
+*.esproj.user
+*.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.njsproj.user
+*.sln
+*.sw*
+*.sln.docstates
+*.bak
+*.cache
+*.csproj
+*.csproj.user
+*.resharper*
+*.DotSettings.user
+*.suo
+_ReSharper*
+*.sln.ide
+
+# Ignore any npm dependencies or lock files
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore any development server files
+.DS_Store
+.env
+
+# Ignore any build or distribution directories
+dist/
+build/
+
+# Ignore the SCSS cache directory
+.sass-cache/
