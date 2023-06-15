@@ -154,18 +154,21 @@ main {
   border-radius: 1rem;
   box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0442381);
   padding: 3.2rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.courses .card img {
+.courses .card .information img {
   position: absolute;
   top: -2.6rem;
 }
-.courses .card h1 {
+.courses .card .information h1 {
   margin-top: 2.4rem;
   font-size: 2rem;
   font-weight: 800;
   color: #13183F;
 }
-.courses .card p {
+.courses .card .information p {
   margin-top: 1.6rem;
   font-weight: 500;
   line-height: 2.6rem;
