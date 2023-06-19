@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+$pure-white: #FFFFFF;
+$cream-background: #F2EAE2;
+$aurometal-saurus: #6C7289;
+$deep-aquamarine: #3D8168;
+$deep-aquamarine-hover: #1A4032;
+$gunmetal: #1C232B;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  min-width: 280px;
+
+  background-color: $cream-background;
+
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  margin: 1.6rem;
+
+  max-width: 60rem;
+
+  background-color: $pure-white;
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+}
+
+.product-image {
+  flex: 1;
+
+  > picture {
+    > img {
+      display: block;
+
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.product-details {
+  flex: 1;
+
+  padding: 2.4rem;
+
+  @media (min-width: 640px) {
+    padding: 3.2rem;
+  }
+}
+
+.product-category {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: $aurometal-saurus;
+}
+
+.product-name {
+  margin-top: 1.2rem;
+
+  font-family: 'Fraunces', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: $gunmetal;
+}
+
+.product-description {
+  margin-top: 1.6rem;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  color: $aurometal-saurus;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+
+  margin-top: 2.4rem;
+
+  > h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $deep-aquamarine;
+  }
+
+  > span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $aurometal-saurus;
+    text-decoration: line-through;
+  }
+}
+
+.buy-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  margin-top: 2rem;
+
+  width: 100%;
+  height: 4.8rem;
+
+  background-color: $deep-aquamarine;
+  border-radius: 0.8rem;
+  border: none;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $pure-white;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $deep-aquamarine-hover;
+  }
+}
+
