@@ -134,10 +134,5 @@ body {
 .buy-now:hover {
   background-color: #1A4032;
 }
-@media (min-width: 640px) {
-  .buy-now {
-    margin-top: 3rem;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

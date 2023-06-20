@@ -164,9 +164,5 @@ body {
   &:hover {
     background-color: $deep-aquamarine-hover;
   }
-
-  @media (min-width: $sm-breakpoint) {
-    margin-top: 3rem;
-  }
 }
 
