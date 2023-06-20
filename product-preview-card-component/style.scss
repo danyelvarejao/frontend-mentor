@@ -51,7 +51,7 @@ body {
 }
 
 .product-image {
-  flex: 1;
+  flex: 1 0 50%;
 
   > picture {
     > img {
@@ -65,7 +65,7 @@ body {
 }
 
 .product-details {
-  flex: 1;
+  flex: 1 0 50%;
 
   padding: 2.4rem;
 
@@ -90,6 +90,10 @@ body {
   font-weight: 700;
   line-height: 3.2rem;
   color: $gunmetal;
+
+  @media (min-width: 640px) {
+    margin-top: 2rem;
+  }
 }
 
 .product-description {
@@ -99,6 +103,10 @@ body {
   font-weight: 500;
   line-height: 2.3rem;
   color: $aurometal-saurus;
+
+  @media (min-width: 640px) {
+    margin-top: 2.4rem;
+  }
 }
 
 .product-price {
@@ -120,6 +128,10 @@ body {
     font-weight: 500;
     color: $aurometal-saurus;
     text-decoration: line-through;
+  }
+
+  @media (min-width: 640px) {
+    margin-top: 2.9rem;
   }
 }
 
@@ -146,6 +158,10 @@ body {
 
   &:hover {
     background-color: $deep-aquamarine-hover;
+  }
+
+  @media (min-width: 640px) {
+    margin-top: 3rem;
   }
 }
 
