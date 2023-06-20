@@ -8,6 +8,11 @@ $deep-aquamarine: #3D8168;
 $deep-aquamarine-hover: #1A4032;
 $gunmetal: #1C232B;
 
+$sm-breakpoint: 640px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 1024px;
+$xl-breakpoint: 1280px;
+
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +50,7 @@ body {
 
   overflow: hidden;
 
-  @media (min-width: 640px) {
+  @media (min-width: $sm-breakpoint) {
     flex-direction: row;
   }
 }
@@ -69,7 +74,7 @@ body {
 
   padding: 2.4rem;
 
-  @media (min-width: 640px) {
+  @media (min-width: $sm-breakpoint) {
     padding: 3.2rem;
   }
 }
@@ -91,7 +96,7 @@ body {
   line-height: 3.2rem;
   color: $gunmetal;
 
-  @media (min-width: 640px) {
+  @media (min-width: $sm-breakpoint) {
     margin-top: 2rem;
   }
 }
@@ -104,7 +109,7 @@ body {
   line-height: 2.3rem;
   color: $aurometal-saurus;
 
-  @media (min-width: 640px) {
+  @media (min-width: $sm-breakpoint) {
     margin-top: 2.4rem;
   }
 }
@@ -130,7 +135,7 @@ body {
     text-decoration: line-through;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: $sm-breakpoint) {
     margin-top: 2.9rem;
   }
 }
@@ -160,7 +165,7 @@ body {
     background-color: $deep-aquamarine-hover;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: $sm-breakpoint) {
     margin-top: 3rem;
   }
 }
